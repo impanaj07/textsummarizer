@@ -13,41 +13,28 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #fbbb5b !important;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #fbbb5b !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">TEXT SUMMARIZATION</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
+          
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSummarization" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Summarization
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSummarization">
+                        <li><a class="dropdown-item" href="text_summarization.html">Text Summarization</a></li>
+                        <li><a class="dropdown-item" href="image_generation.html">Image Generation</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
-
-    
-    <div class="container w-100">
-        <div class="row justify-content-md-center">
-           
-            <div class="col">
-                <br>
-                <p>{{ data["summary"] }}</p>
-                
-            </div>
-        </div>
-        
-    </div>
-
-<<<<<<< HEAD
-  
-=======
-  <div class="container w-100">
-    <div class="row justify-content-md-center">
-        <div class="col">
-            <br>
-            <img src="{{ data['image'] }}" alt="Pixel Art" width="500" height="600"></img>
-        </div>
-    </div>
-  </div>
->>>>>>> parent of d6c6449 (Added a navigation bar where the user can choose between text summarization and image generation,also added a download button where the user can download the generated image)
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
        
 
